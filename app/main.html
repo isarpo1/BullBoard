@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitBoard - Your Stock Trading Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>BitBoard</h1>
+        </header>
+
+        <main>
+            <section class="portfolio">
+                <h2><i class="fas fa-briefcase"></i> Portfolio</h2>
+                <div class="portfolio-item">
+                    <div class="stock-info">
+                        <span class="symbol">AAPL</span>
+                        <span class="name">Apple Inc.</span>
+                    </div>
+                    <div class="stock-data">
+                        <span class="price">$170.50</span>
+                        <span class="change positive">+1.25 (+0.74%)</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="stock-info">
+                        <span class="symbol">GOOGL</span>
+                        <span class="name">Alphabet Inc.</span>
+                    </div>
+                    <div class="stock-data">
+                        <span class="price">$2500.10</span>
+                        <span class="change negative">-5.30 (-0.21%)</span>
+                    </div>
+                </div>
+                </section>
+
+            <section class="watchlist">
+                <h2><i class="fas fa-eye"></i> Watchlist</h2>
+                <div class="watchlist-item">
+                    <span class="symbol">TSLA</span>
+                    <span class="price">$850.75</span>
+                    <span class="change positive">+15.20 (+1.82%)</span>
+                </div>
+                <div class="watchlist-item">
+                    <span class="symbol">AMZN</span>
+                    <span class="price">$3200.50</span>
+                    <span class="change negative">-8.15 (-0.25%)</span>
+                </div>
+                </section>
+
+            <section class="trade-history">
+                <h2><i class="fas fa-history"></i> Trade History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Buy</td>
+                            <td>$300.20</td>
+                            <td>10</td>
+                            <td>2025-04-25</td>
+                        </tr>
+                        <tr>
+                            <td>NVDA</td>
+                            <td>Sell</td>
+                            <td>$280.50</td>
+                            <td>5</td>
+                            <td>2025-04-24</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </section>
+
+            <section class="account-summary">
+                <h2><i class="fas fa-chart-pie"></i> Account Summary</h2>
+                <div class="summary-item">
+                    <span>Account Balance:</span>
+                    <span>$10,500.75</span>
+                </div>
+                <div class="summary-item">
+                    <span>Total Portfolio Value:</span>
+                    <span>$5,250.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Available Funds:</span>
+                    <span>$5,250.75</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 BitBoard. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

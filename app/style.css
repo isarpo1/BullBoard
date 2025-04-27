@@ -1,0 +1,216 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #007bff;
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+section h2 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+section h2 i {
+    font-size: 1em;
+    color: #007bff;
+}
+
+.portfolio-item, .watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9em;
+}
+
+.portfolio-item:last-child, .watchlist-item:last-child {
+    border-bottom: none;
+}
+
+.stock-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-info .symbol {
+    font-weight: 600;
+    color: #333;
+    font-size: 1em;
+}
+
+.stock-info .name {
+    color: #777;
+    font-size: 0.85em;
+    margin-top: 2px;
+}
+
+.stock-data {
+    text-align: right;
+}
+
+.price {
+    font-weight: 500;
+    color: #333;
+    font-size: 1em;
+}
+
+.change {
+    font-size: 0.85em;
+    margin-left: 5px;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.trade-history {
+    overflow-x: auto;
+}
+
+.trade-history table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.85em;
+}
+
+.trade-history th, .trade-history td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: nowrap;
+}
+
+.trade-history th {
+    font-weight: 500;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+.trade-history tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trade-history tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.account-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9em;
+}
+
+.account-summary .summary-item:last-child {
+    border-bottom: none;
+}
+
+.account-summary .summary-item span:first-child {
+    font-weight: 500;
+    color: #555;
+}
+
+.account-summary .summary-item span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+
+    .portfolio-item, .watchlist-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .stock-data {
+        text-align: left;
+    }
+
+    .change {
+        margin-left: 0;
+    }
+}
